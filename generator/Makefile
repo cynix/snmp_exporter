@@ -75,6 +75,9 @@ CISCO_CUCS_URL    := https://raw.githubusercontent.com/cisco/cisco-mibs/refs/hea
 CISCO_CUCS_URL_v2 := https://raw.githubusercontent.com/cisco/cisco-mibs/refs/heads/main/v2
 YAMAHA_URL        := https://www.rtpro.yamaha.co.jp/RT/docs/mib/
 
+EATON_URL         := https://www.eaton.com/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/Firmware/connectivity/eaton-network-connectivity-mib-files.zip
+SUPERMICRO_URL    := https://www.supermicro.com/products/accessories/software/X12_X13_MIBs_2024_0329.zip
+
 CYBERPOWER_VERSION := 2.11
 CYBERPOWER_URL     := https://dl4jz3rbrsfum.cloudfront.net/software/CyberPower_MIB_v$(CYBERPOWER_VERSION).MIB.zip
 
@@ -93,6 +96,8 @@ all: mibs
 clean:
 	rm -rvf \
 		$(MIBDIR)/* \
+		$(MIBDIR)/.eaton \
+		$(MIBDIR)/.supermicro \
 		$(MIBDIR)/.cisco-device \
 		$(MIBDIR)/.cisco_v2 \
 		$(MIBDIR)/.cisco_imc \
@@ -139,6 +144,8 @@ docker-tag-latest:
 	docker tag "$(DOCKER_REPO)/$(DOCKER_IMAGE_NAME):$(SANITIZED_DOCKER_IMAGE_TAG)" "$(DOCKER_REPO)/$(DOCKER_IMAGE_NAME):latest"
 
 mibs: \
+  $(MIBDIR)/.eaton \
+  $(MIBDIR)/.supermicro \
   $(MIBDIR)/apc-powernet-mib \
   $(MIBDIR)/readynas \
   $(MIBDIR)/readydataos \
@@ -190,6 +197,18 @@ mibs: \
   $(MIBDIR)/.juniper \
   $(MIBDIR)/.dell-network \
 	$(MIBDIR)/.yamaha-rt
+
+$(MIBDIR)/.eaton:
+	@cp eaton-network-connectivity-mib-files/* $(MIBDIR)
+	@touch $(MIBDIR)/.eaton
+
+$(MIBDIR)/.supermicro:
+	$(eval TMP := $(shell mktemp))
+	@echo ">> Downloading IPMI-SNMP-Agent.mib to $(TMP)"
+	@curl $(CURL_OPTS) -o $(TMP) $(SUPERMICRO_URL)
+	@unzip -j -d $(MIBDIR) $(TMP) IPMI-SNMP-Agent.mib
+	@rm -v $(TMP)
+	@touch $(MIBDIR)/.supermicro
 
 $(MIBDIR)/apc-powernet-mib:
 	@echo ">> Downloading apc-powernet-mib"
