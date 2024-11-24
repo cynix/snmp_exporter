@@ -40,6 +40,229 @@ modules:
   ip_mib:
     walk: [ipv4InterfaceTable]
 
+#
+# xups
+#
+  eaton:
+    walk:
+      - upsSecondsOnBattery
+      - upsBatteryVoltage
+      - upsBatteryCurrent
+      - upsBatteryTemperature
+      - xupsBatTimeRemaining
+      - xupsBatVoltage
+      - xupsBatCurrent
+      - xupsBatCapacity
+      - xupsBatteryAbmStatus
+      - xupsBatteryLastReplacedDate
+      - xupsBatteryFailure
+      - xupsBatteryNotPresent
+      - xupsBatteryAged
+      - xupsBatteryLowCapacity
+      - xupsInputFrequency
+      - xupsInputLineBads
+      - xupsInputNumPhases
+      - xupsInputTable
+      - xupsInputSource
+      - xupsInputAveragePowerFactor
+      - xupsInputStatus
+      - xupsOutputLoad
+      - xupsOutputFrequency
+      - xupsOutputNumPhases
+      - xupsOutputTable
+      - xupsOutputSource
+      - xupsOutputHourlyPowerUsage
+      - xupsOutputCumulativePowerUsage
+      - xupsOutputCumulativePowerUsageTimer
+      - xupsOutputAveragePowerFactor
+      - xupsOutputStatus
+      - xupsBypassFrequency
+      - xupsBypassTable
+      - xupsBypassAveragePowerFactor
+      - xupsEnvAmbientTemp
+      - xupsEnvAmbientHumidity
+      - xupsNumReceptacles
+      - xupsRecepTable
+    lookups:
+      - source_indexes: [xupsInputPhase]
+        lookup: xupsInputName
+      - source_indexes: [xupsOutputPhase]
+        lookup: xupsOutputName
+      - source_indexes: [xupsBypassPhase]
+        lookup: xupsBypassName
+    overrides:
+      xupsInputPhase:
+        ignore: true
+      xupsInputName:
+        ignore: true
+        type: DisplayString
+      xupsOutputPhase:
+        ignore: true
+      xupsOutputName:
+        ignore: true
+        type: DisplayString
+      xupsBypassPhase:
+        ignore: true
+      xupsBypassName:
+        ignore: true
+        type: DisplayString
+      xupsRecepIndex:
+        ignore: true
+      xupsRecepOffDelaySecs:
+        ignore: true
+      xupsRecepOnDelaySecs:
+        ignore: true
+      xupsRecepAutoOffDelay:
+        ignore: true
+      xupsRecepAutoOnDelay:
+        ignore: true
+      xupsRecepShedSecsWithRestart:
+        ignore: true
+    filters:
+      static:
+        - targets:
+            - upsSecondsOnBattery
+            - upsBatteryVoltage
+            - upsBatteryCurrent
+            - upsBatteryTemperature
+            - xupsBatTimeRemaining
+            - xupsBatVoltage
+            - xupsBatCurrent
+            - xupsBatCapacity
+            - xupsBatteryAbmStatus
+            - xupsBatteryLastReplacedDate
+            - xupsBatteryFailure
+            - xupsBatteryNotPresent
+            - xupsBatteryAged
+            - xupsBatteryLowCapacity
+            - xupsInputFrequency
+            - xupsInputLineBads
+            - xupsInputNumPhases
+            - xupsInputSource
+            - xupsInputAveragePowerFactor
+            - xupsInputStatus
+            - xupsOutputLoad
+            - xupsOutputFrequency
+            - xupsOutputNumPhases
+            - xupsOutputSource
+            - xupsOutputHourlyPowerUsage
+            - xupsOutputCumulativePowerUsage
+            - xupsOutputCumulativePowerUsageTimer
+            - xupsOutputAveragePowerFactor
+            - xupsOutputStatus
+            - xupsBypassFrequency
+            - xupsBypassAveragePowerFactor
+            - xupsEnvAmbientTemp
+            - xupsEnvAmbientHumidity
+            - xupsNumReceptacles
+          indices: ["0"]
+
+#
+# supermicro
+#
+  supermicro:
+    walk:
+      - sensorTable
+      - powerStatus
+      - 1.3.6.1.4.1.21317.1.14.1 # psuNumber
+      - 1.3.6.1.4.1.21317.1.14.2 # psuTable
+    lookups:
+      - source_indexes: [sensorNumber]
+        lookup: sensorIDString
+        drop_source_indexes: true
+      - source_indexes: [psuIndex]
+        lookup: psuSerialNumber
+    overrides:
+      sensorNumber:
+        ignore: true
+      sensorReading:
+        type: DisplayString
+        help: Current sensor reading
+        regex_extracts:
+          '':
+            - regex: '(.*)'
+      sensorPositiveHysteresis:
+        help: Sensor positive hysteresis
+      sensorNegativeHysteresis:
+        help: Sensor negative hysteresis
+      lncThreshold:
+        type: DisplayString
+        help: Lower non-critical threshold
+        regex_extracts:
+          '':
+            - regex: '(.*)'
+      lcThreshold:
+        type: DisplayString
+        help: Lower critical threshold
+        regex_extracts:
+          '':
+            - regex: '(.*)'
+      lnrThreshold:
+        type: DisplayString
+        help: Lower non-recoverable threshold
+        regex_extracts:
+          '':
+            - regex: '(.*)'
+      uncThreshold:
+        type: DisplayString
+        help: Upper non-critical threshold
+        regex_extracts:
+          '':
+            - regex: '(.*)'
+      ucThreshold:
+        type: DisplayString
+        help: Upper critical threshold
+        regex_extracts:
+          '':
+            - regex: '(.*)'
+      unrThreshold:
+        type: DisplayString
+        help: Upper non-recoverable threshold
+        regex_extracts:
+          '':
+            - regex: '(.*)'
+      eventAssertionEnable:
+        ignore: true
+      eventDeassertionEnable:
+        ignore: true
+      sensorIDString:
+        ignore: true
+        type: DisplayString
+      powerStatus:
+        help: Power status
+        type: EnumAsStateSet
+      psuStatus:
+        type: EnumAsStateSet
+      inputVoltage:
+        type: DisplayString
+        regex_extracts:
+          '':
+            - regex: '(.*)'
+      inputCurrent:
+        type: DisplayString
+        regex_extracts:
+          '':
+            - regex: '(.*)'
+      outputVoltage:
+        type: DisplayString
+        regex_extracts:
+          '':
+            - regex: '(.*)'
+      outputCurrent:
+        type: DisplayString
+        regex_extracts:
+          '':
+            - regex: '(.*)'
+      psuSerialNumber:
+        ignore: true
+        type: DisplayString
+    filters:
+      static:
+        - targets:
+            - powerStatus
+            - 1.3.6.1.4.1.21317.1.14.1 # psuNumber
+          indices: ["0"]
+
   readynas:
     walk:
       - 1.3.6.1.4.1.4526               # Raid/Disks status
