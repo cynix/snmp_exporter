@@ -2962,7 +2962,6 @@ modules:
       indexes:
       - labelname: bsnAPDot3MacAddress
         type: PhysAddress48
-        fixed_size: 6
       - labelname: bsnAPIfSlotId
         type: gauge
       lookups:
@@ -2981,7 +2980,6 @@ modules:
       indexes:
       - labelname: bsnAPDot3MacAddress
         type: PhysAddress48
-        fixed_size: 6
       - labelname: bsnAPIfSlotId
         type: gauge
       - labelname: bsnAPIfNoiseChannelNo
@@ -3001,7 +2999,6 @@ modules:
       indexes:
       - labelname: bsnAPDot3MacAddress
         type: PhysAddress48
-        fixed_size: 6
       - labelname: bsnAPIfSlotId
         type: gauge
       lookups:
@@ -3019,7 +3016,6 @@ modules:
       indexes:
       - labelname: bsnAPDot3MacAddress
         type: PhysAddress48
-        fixed_size: 6
       - labelname: bsnAPIfSlotId
         type: gauge
       lookups:
@@ -3043,7 +3039,6 @@ modules:
       indexes:
       - labelname: bsnAPDot3MacAddress
         type: PhysAddress48
-        fixed_size: 6
       - labelname: bsnAPIfSlotId
         type: gauge
       lookups:
@@ -3114,7 +3109,6 @@ modules:
       indexes:
       - labelname: bsnAPDot3MacAddress
         type: PhysAddress48
-        fixed_size: 6
       - labelname: bsnAPIfSlotId
         type: gauge
       lookups:
@@ -3133,7 +3127,6 @@ modules:
       indexes:
       - labelname: bsnAPDot3MacAddress
         type: PhysAddress48
-        fixed_size: 6
       - labelname: bsnAPIfSlotId
         type: gauge
       lookups:
@@ -3152,7 +3145,6 @@ modules:
       indexes:
       - labelname: bsnAPDot3MacAddress
         type: PhysAddress48
-        fixed_size: 6
       - labelname: bsnAPIfSlotId
         type: gauge
       lookups:
@@ -3171,7 +3163,6 @@ modules:
       indexes:
       - labelname: bsnAPDot3MacAddress
         type: PhysAddress48
-        fixed_size: 6
       - labelname: bsnAPIfSlotId
         type: gauge
       lookups:
@@ -3190,7 +3181,6 @@ modules:
       indexes:
       - labelname: bsnAPDot3MacAddress
         type: PhysAddress48
-        fixed_size: 6
       - labelname: bsnAPIfSlotId
         type: gauge
       lookups:
@@ -3209,7 +3199,6 @@ modules:
       indexes:
       - labelname: bsnAPDot3MacAddress
         type: PhysAddress48
-        fixed_size: 6
       - labelname: bsnAPIfSlotId
         type: gauge
       lookups:
@@ -3228,7 +3217,6 @@ modules:
       indexes:
       - labelname: bsnAPDot3MacAddress
         type: PhysAddress48
-        fixed_size: 6
       - labelname: bsnAPIfSlotId
         type: gauge
       lookups:
@@ -3247,7 +3235,6 @@ modules:
       indexes:
       - labelname: bsnAPDot3MacAddress
         type: PhysAddress48
-        fixed_size: 6
       - labelname: bsnAPIfSlotId
         type: gauge
       lookups:
@@ -3266,7 +3253,6 @@ modules:
       indexes:
       - labelname: bsnAPDot3MacAddress
         type: PhysAddress48
-        fixed_size: 6
       - labelname: bsnAPIfSlotId
         type: gauge
       lookups:
@@ -3285,7 +3271,6 @@ modules:
       indexes:
       - labelname: bsnAPDot3MacAddress
         type: PhysAddress48
-        fixed_size: 6
       - labelname: bsnAPIfSlotId
         type: gauge
       lookups:
@@ -3304,7 +3289,6 @@ modules:
       indexes:
       - labelname: bsnAPDot3MacAddress
         type: PhysAddress48
-        fixed_size: 6
       - labelname: bsnAPIfSlotId
         type: gauge
       lookups:
@@ -3323,7 +3307,6 @@ modules:
       indexes:
       - labelname: bsnAPDot3MacAddress
         type: PhysAddress48
-        fixed_size: 6
       - labelname: bsnAPIfSlotId
         type: gauge
       lookups:
@@ -3345,7 +3328,6 @@ modules:
       indexes:
       - labelname: bsnAPDot3MacAddress
         type: PhysAddress48
-        fixed_size: 6
       - labelname: bsnAPIfSlotId
         type: gauge
       lookups:
@@ -3365,7 +3347,6 @@ modules:
       indexes:
       - labelname: bsnAPDot3MacAddress
         type: PhysAddress48
-        fixed_size: 6
       - labelname: bsnAPIfSlotId
         type: gauge
       lookups:
@@ -13287,6 +13268,581 @@ modules:
       oid: 1.3.6.1.4.1.11863.10.1.1.1
       type: gauge
       help: this used to get the count of clients - 1.3.6.1.4.1.11863.10.1.1.1
+  eaton:
+    walk:
+    - 1.3.6.1.4.1.534.1.12.2
+    - 1.3.6.1.4.1.534.1.3.4
+    - 1.3.6.1.4.1.534.1.4.4
+    - 1.3.6.1.4.1.534.1.5.3
+    get:
+    - 1.3.6.1.2.1.33.1.2.2.0
+    - 1.3.6.1.4.1.534.1.12.1.0
+    - 1.3.6.1.4.1.534.1.2.1.0
+    - 1.3.6.1.4.1.534.1.2.10.0
+    - 1.3.6.1.4.1.534.1.2.2.0
+    - 1.3.6.1.4.1.534.1.2.3.0
+    - 1.3.6.1.4.1.534.1.2.4.0
+    - 1.3.6.1.4.1.534.1.2.5.0
+    - 1.3.6.1.4.1.534.1.2.6.0
+    - 1.3.6.1.4.1.534.1.2.7.0
+    - 1.3.6.1.4.1.534.1.2.8.0
+    - 1.3.6.1.4.1.534.1.2.9.0
+    - 1.3.6.1.4.1.534.1.3.1.0
+    - 1.3.6.1.4.1.534.1.3.2.0
+    - 1.3.6.1.4.1.534.1.3.3.0
+    - 1.3.6.1.4.1.534.1.3.5.0
+    - 1.3.6.1.4.1.534.1.3.8.5.0
+    - 1.3.6.1.4.1.534.1.3.9.0
+    - 1.3.6.1.4.1.534.1.4.1.0
+    - 1.3.6.1.4.1.534.1.4.10.0
+    - 1.3.6.1.4.1.534.1.4.2.0
+    - 1.3.6.1.4.1.534.1.4.3.0
+    - 1.3.6.1.4.1.534.1.4.5.0
+    - 1.3.6.1.4.1.534.1.4.6.0
+    - 1.3.6.1.4.1.534.1.4.7.0
+    - 1.3.6.1.4.1.534.1.4.8.0
+    - 1.3.6.1.4.1.534.1.4.9.5.0
+    - 1.3.6.1.4.1.534.1.5.1.0
+    - 1.3.6.1.4.1.534.1.5.4.5.0
+    - 1.3.6.1.4.1.534.1.6.1.0
+    - 1.3.6.1.4.1.534.1.6.4.0
+    - 1.3.6.1.4.1.6574.4.3.2.0
+    - 1.3.6.1.4.1.6574.4.3.4.0
+    - 1.3.6.1.4.1.6574.4.3.5.0
+    metrics:
+    - name: upsSecondsOnBattery
+      oid: 1.3.6.1.2.1.33.1.2.2
+      type: gauge
+      help: If the unit is on battery power, the elapsed time since the UPS last switched
+        to battery power, or the time since the network management subsystem was last
+        restarted, whichever is less - 1.3.6.1.2.1.33.1.2.2
+    - name: xupsNumReceptacles
+      oid: 1.3.6.1.4.1.534.1.12.1
+      type: gauge
+      help: The number of independently controllable Receptacles, as described in
+        the xupsRecepTable. - 1.3.6.1.4.1.534.1.12.1
+    - name: xupsRecepStatus
+      oid: 1.3.6.1.4.1.534.1.12.2.1.2
+      type: gauge
+      help: The Recep Status 1=On/Close, 2=Off/Open, 3=On w/Pending Off, 4=Off w/Pending
+        ON, 5=Unknown, 6=Reserved for future, 7=Failed in Closed position, 8=Failed
+        in Open position. - 1.3.6.1.4.1.534.1.12.2.1.2
+      indexes:
+      - labelname: xupsRecepIndex
+        type: gauge
+      enum_values:
+        1: "on"
+        2: "off"
+        3: pendingOff
+        4: pendingOn
+        5: unknown
+        6: reserved
+        7: failedClosed
+        8: failedOpen
+    - name: xupsRecepHourlyPowerUsage
+      oid: 1.3.6.1.4.1.534.1.12.2.1.8
+      type: gauge
+      help: Units are Watt-hours.This is the energy consumed during the last hour.
+        - 1.3.6.1.4.1.534.1.12.2.1.8
+      indexes:
+      - labelname: xupsRecepIndex
+        type: gauge
+    - name: xupsRecepCumulativePowerUsage
+      oid: 1.3.6.1.4.1.534.1.12.2.1.9
+      type: gauge
+      help: Units are Watt-hours.This is the energy consumed since the last reset
+        - 1.3.6.1.4.1.534.1.12.2.1.9
+      indexes:
+      - labelname: xupsRecepIndex
+        type: gauge
+    - name: xupsRecepCumulativePowerUsageTimer
+      oid: 1.3.6.1.4.1.534.1.12.2.1.10
+      type: counter
+      help: Time in seconds since the cumulative power usage was last reset. - 1.3.6.1.4.1.534.1.12.2.1.10
+      indexes:
+      - labelname: xupsRecepIndex
+        type: gauge
+    - name: xupsBatTimeRemaining
+      oid: 1.3.6.1.4.1.534.1.2.1
+      type: gauge
+      help: Battery run time in seconds before UPS turns off due to low battery. -
+        1.3.6.1.4.1.534.1.2.1
+    - name: xupsBatteryLowCapacity
+      oid: 1.3.6.1.4.1.534.1.2.10
+      type: gauge
+      help: Indicates if the battery capacity is below the threshold set in the UPS.
+        - 1.3.6.1.4.1.534.1.2.10
+      enum_values:
+        1: "yes"
+        2: "no"
+    - name: xupsBatVoltage
+      oid: 1.3.6.1.4.1.534.1.2.2
+      type: gauge
+      help: Battery voltage as reported by the UPS meters. - 1.3.6.1.4.1.534.1.2.2
+    - name: xupsBatCurrent
+      oid: 1.3.6.1.4.1.534.1.2.3
+      type: gauge
+      help: Battery Current as reported by the UPS metering - 1.3.6.1.4.1.534.1.2.3
+    - name: xupsBatCapacity
+      oid: 1.3.6.1.4.1.534.1.2.4
+      type: gauge
+      help: Battery percent charge. - 1.3.6.1.4.1.534.1.2.4
+    - name: xupsBatteryAbmStatus
+      oid: 1.3.6.1.4.1.534.1.2.5
+      type: gauge
+      help: Gives the status of the Advanced Battery Management and Battery state;
+        batteryFloating(3) status means that the charger is temporarily charging the
+        battery to its float voltage; batteryResting(4) is the state when the battery
+        is fully charged and none of the other actions (charging/discharging/floating)
+        is being done - 1.3.6.1.4.1.534.1.2.5
+      enum_values:
+        1: batteryCharging
+        2: batteryDischarging
+        3: batteryFloating
+        4: batteryResting
+        5: unknown
+        6: batteryDisconnected
+        7: batteryUnderTest
+        8: checkBattery
+    - name: xupsBatteryLastReplacedDate
+      oid: 1.3.6.1.4.1.534.1.2.6
+      type: DisplayString
+      help: The date when the Batteries in this UPS were last replaced - 1.3.6.1.4.1.534.1.2.6
+    - name: xupsBatteryFailure
+      oid: 1.3.6.1.4.1.534.1.2.7
+      type: gauge
+      help: Indicates if a battery fault detected or battery tests failed. - 1.3.6.1.4.1.534.1.2.7
+      enum_values:
+        1: "yes"
+        2: "no"
+    - name: xupsBatteryNotPresent
+      oid: 1.3.6.1.4.1.534.1.2.8
+      type: gauge
+      help: Indicates if the UPS has no battery either internal or external. - 1.3.6.1.4.1.534.1.2.8
+      enum_values:
+        1: "yes"
+        2: "no"
+    - name: xupsBatteryAged
+      oid: 1.3.6.1.4.1.534.1.2.9
+      type: gauge
+      help: Indicates if the battery is over aged. - 1.3.6.1.4.1.534.1.2.9
+      enum_values:
+        1: "yes"
+        2: "no"
+    - name: xupsInputFrequency
+      oid: 1.3.6.1.4.1.534.1.3.1
+      type: gauge
+      help: The utility line frequency in tenths of Hz. - 1.3.6.1.4.1.534.1.3.1
+    - name: xupsInputLineBads
+      oid: 1.3.6.1.4.1.534.1.3.2
+      type: counter
+      help: The number of times the Input was out of tolerance in voltage or frequency.
+        - 1.3.6.1.4.1.534.1.3.2
+    - name: xupsInputNumPhases
+      oid: 1.3.6.1.4.1.534.1.3.3
+      type: gauge
+      help: The number of input phases (normally 1 to 3). - 1.3.6.1.4.1.534.1.3.3
+    - name: xupsInputVoltage
+      oid: 1.3.6.1.4.1.534.1.3.4.1.2
+      type: gauge
+      help: The measured input voltage from the UPS meters in volts. - 1.3.6.1.4.1.534.1.3.4.1.2
+      indexes:
+      - labelname: xupsInputPhase
+        type: gauge
+      lookups:
+      - labels:
+        - xupsInputPhase
+        labelname: xupsInputName
+        oid: 1.3.6.1.4.1.534.1.3.4.1.6
+        type: DisplayString
+    - name: xupsInputCurrent
+      oid: 1.3.6.1.4.1.534.1.3.4.1.3
+      type: gauge
+      help: The measured input current from the UPS meters in amps. - 1.3.6.1.4.1.534.1.3.4.1.3
+      indexes:
+      - labelname: xupsInputPhase
+        type: gauge
+      lookups:
+      - labels:
+        - xupsInputPhase
+        labelname: xupsInputName
+        oid: 1.3.6.1.4.1.534.1.3.4.1.6
+        type: DisplayString
+    - name: xupsInputWatts
+      oid: 1.3.6.1.4.1.534.1.3.4.1.4
+      type: gauge
+      help: The measured input real power in watts. - 1.3.6.1.4.1.534.1.3.4.1.4
+      indexes:
+      - labelname: xupsInputPhase
+        type: gauge
+      lookups:
+      - labels:
+        - xupsInputPhase
+        labelname: xupsInputName
+        oid: 1.3.6.1.4.1.534.1.3.4.1.6
+        type: DisplayString
+    - name: xupsInputId
+      oid: 1.3.6.1.4.1.534.1.3.4.1.5
+      type: gauge
+      help: 'value indicates what measurement is being stored in this table row :
+        phase1 to neutral, phase2 to neutral, phase3 to neutral, phase1 to phase2,
+        phase2 to phase3, phase3 to phase1. - 1.3.6.1.4.1.534.1.3.4.1.5'
+      indexes:
+      - labelname: xupsInputPhase
+        type: gauge
+      lookups:
+      - labels:
+        - xupsInputPhase
+        labelname: xupsInputName
+        oid: 1.3.6.1.4.1.534.1.3.4.1.6
+        type: DisplayString
+      enum_values:
+        1: phase1toN
+        2: phase2toN
+        3: phase3toN
+        4: phase1to2
+        5: phase2to3
+        6: phase3to1
+    - name: xupsInputCurrentHighPrecision
+      oid: 1.3.6.1.4.1.534.1.3.4.1.7
+      type: gauge
+      help: The measured input current from the UPS meters in tenth of amps. - 1.3.6.1.4.1.534.1.3.4.1.7
+      indexes:
+      - labelname: xupsInputPhase
+        type: gauge
+      lookups:
+      - labels:
+        - xupsInputPhase
+        labelname: xupsInputName
+        oid: 1.3.6.1.4.1.534.1.3.4.1.6
+        type: DisplayString
+    - name: xupsInputVoltagePhaseToPhase
+      oid: 1.3.6.1.4.1.534.1.3.4.1.8
+      type: gauge
+      help: The measured input phase to phase voltage from the UPS meters in volts,
+        For the phase n, it is the measure of phase n to phase n+1 voltage. - 1.3.6.1.4.1.534.1.3.4.1.8
+      indexes:
+      - labelname: xupsInputPhase
+        type: gauge
+      lookups:
+      - labels:
+        - xupsInputPhase
+        labelname: xupsInputName
+        oid: 1.3.6.1.4.1.534.1.3.4.1.6
+        type: DisplayString
+    - name: xupsInputSource
+      oid: 1.3.6.1.4.1.534.1.3.5
+      type: gauge
+      help: The present external source of input power - 1.3.6.1.4.1.534.1.3.5
+      enum_values:
+        1: other
+        2: none
+        3: primaryUtility
+        4: bypassFeed
+        5: secondaryUtility
+        6: generator
+        7: flywheel
+        8: fuelcell
+    - name: xupsInputAveragePowerFactor
+      oid: 1.3.6.1.4.1.534.1.3.8.5
+      type: gauge
+      help: Indicates the total power factor of the input in hundredths - 1.3.6.1.4.1.534.1.3.8.5
+    - name: xupsInputStatus
+      oid: 1.3.6.1.4.1.534.1.3.9
+      type: gauge
+      help: The present status of the primary AC input of the UPS - 1.3.6.1.4.1.534.1.3.9
+      enum_values:
+        1: inputBad
+        2: inputGood
+    - name: xupsOutputLoad
+      oid: 1.3.6.1.4.1.534.1.4.1
+      type: gauge
+      help: The UPS output load in percent of rated capacity. - 1.3.6.1.4.1.534.1.4.1
+    - name: xupsOutputStatus
+      oid: 1.3.6.1.4.1.534.1.4.10
+      type: gauge
+      help: The present status of the AC output of the UPS - 1.3.6.1.4.1.534.1.4.10
+      enum_values:
+        0: unknown
+        1: outputNotPowered
+        2: outputNotProtected
+        3: outputProtected
+        4: outputPoweredNoContinuity
+    - name: xupsOutputFrequency
+      oid: 1.3.6.1.4.1.534.1.4.2
+      type: gauge
+      help: The measured UPS output frequency in tenths of Hz. - 1.3.6.1.4.1.534.1.4.2
+    - name: xupsOutputNumPhases
+      oid: 1.3.6.1.4.1.534.1.4.3
+      type: gauge
+      help: The number of metered output phases. - 1.3.6.1.4.1.534.1.4.3
+    - name: xupsOutputVoltage
+      oid: 1.3.6.1.4.1.534.1.4.4.1.2
+      type: gauge
+      help: The measured output voltage from the UPS metering in volts. - 1.3.6.1.4.1.534.1.4.4.1.2
+      indexes:
+      - labelname: xupsOutputPhase
+        type: gauge
+      lookups:
+      - labels:
+        - xupsOutputPhase
+        labelname: xupsOutputName
+        oid: 1.3.6.1.4.1.534.1.4.4.1.6
+        type: DisplayString
+    - name: xupsOutputCurrent
+      oid: 1.3.6.1.4.1.534.1.4.4.1.3
+      type: gauge
+      help: The measured UPS output current in amps. - 1.3.6.1.4.1.534.1.4.4.1.3
+      indexes:
+      - labelname: xupsOutputPhase
+        type: gauge
+      lookups:
+      - labels:
+        - xupsOutputPhase
+        labelname: xupsOutputName
+        oid: 1.3.6.1.4.1.534.1.4.4.1.6
+        type: DisplayString
+    - name: xupsOutputWatts
+      oid: 1.3.6.1.4.1.534.1.4.4.1.4
+      type: gauge
+      help: The measured real output power in watts. - 1.3.6.1.4.1.534.1.4.4.1.4
+      indexes:
+      - labelname: xupsOutputPhase
+        type: gauge
+      lookups:
+      - labels:
+        - xupsOutputPhase
+        labelname: xupsOutputName
+        oid: 1.3.6.1.4.1.534.1.4.4.1.6
+        type: DisplayString
+    - name: xupsOutputId
+      oid: 1.3.6.1.4.1.534.1.4.4.1.5
+      type: gauge
+      help: 'value indicates what measurement is being stored in this table row :
+        phase1 to neutral, phase2 to neutral, phase3 to neutral, phase1 to phase2,
+        phase2 to phase3, phase3 to phase1. - 1.3.6.1.4.1.534.1.4.4.1.5'
+      indexes:
+      - labelname: xupsOutputPhase
+        type: gauge
+      lookups:
+      - labels:
+        - xupsOutputPhase
+        labelname: xupsOutputName
+        oid: 1.3.6.1.4.1.534.1.4.4.1.6
+        type: DisplayString
+      enum_values:
+        1: phase1toN
+        2: phase2toN
+        3: phase3toN
+        4: phase1to2
+        5: phase2to3
+        6: phase3to1
+    - name: xupsOutputCurrentHighPrecision
+      oid: 1.3.6.1.4.1.534.1.4.4.1.7
+      type: gauge
+      help: The measured output current from the UPS meters in tenth of amps. - 1.3.6.1.4.1.534.1.4.4.1.7
+      indexes:
+      - labelname: xupsOutputPhase
+        type: gauge
+      lookups:
+      - labels:
+        - xupsOutputPhase
+        labelname: xupsOutputName
+        oid: 1.3.6.1.4.1.534.1.4.4.1.6
+        type: DisplayString
+    - name: xupsOutputPercentLoad
+      oid: 1.3.6.1.4.1.534.1.4.4.1.8
+      type: gauge
+      help: The percentage of the UPS power capacity presently being used on this
+        output line - 1.3.6.1.4.1.534.1.4.4.1.8
+      indexes:
+      - labelname: xupsOutputPhase
+        type: gauge
+      lookups:
+      - labels:
+        - xupsOutputPhase
+        labelname: xupsOutputName
+        oid: 1.3.6.1.4.1.534.1.4.4.1.6
+        type: DisplayString
+    - name: xupsOutputVA
+      oid: 1.3.6.1.4.1.534.1.4.4.1.9
+      type: gauge
+      help: The measured apparent output power in VA. - 1.3.6.1.4.1.534.1.4.4.1.9
+      indexes:
+      - labelname: xupsOutputPhase
+        type: gauge
+      lookups:
+      - labels:
+        - xupsOutputPhase
+        labelname: xupsOutputName
+        oid: 1.3.6.1.4.1.534.1.4.4.1.6
+        type: DisplayString
+    - name: xupsOutputVoltagePhaseToPhase
+      oid: 1.3.6.1.4.1.534.1.4.4.1.10
+      type: gauge
+      help: The measured output phase to phase voltage from the UPS meters in volts,
+        For the phase n, it is the measure of phase n to phase n+1 voltage. - 1.3.6.1.4.1.534.1.4.4.1.10
+      indexes:
+      - labelname: xupsOutputPhase
+        type: gauge
+      lookups:
+      - labels:
+        - xupsOutputPhase
+        labelname: xupsOutputName
+        oid: 1.3.6.1.4.1.534.1.4.4.1.6
+        type: DisplayString
+    - name: xupsOutputSource
+      oid: 1.3.6.1.4.1.534.1.4.5
+      type: gauge
+      help: The present source of output power - 1.3.6.1.4.1.534.1.4.5
+      enum_values:
+        1: other
+        2: none
+        3: normal
+        4: bypass
+        5: battery
+        6: booster
+        7: reducer
+        8: parallelCapacity
+        9: parallelRedundant
+        10: highEfficiencyMode
+        11: maintenanceBypass
+        12: essMode
+    - name: xupsOutputHourlyPowerUsage
+      oid: 1.3.6.1.4.1.534.1.4.6
+      type: gauge
+      help: Units are Watt-hours.This is the energy consumed during the last hour.
+        - 1.3.6.1.4.1.534.1.4.6
+    - name: xupsOutputCumulativePowerUsage
+      oid: 1.3.6.1.4.1.534.1.4.7
+      type: gauge
+      help: Units are Watt-hours.This is the energy consumed since the last reset
+        - 1.3.6.1.4.1.534.1.4.7
+    - name: xupsOutputCumulativePowerUsageTimer
+      oid: 1.3.6.1.4.1.534.1.4.8
+      type: counter
+      help: Time in seconds since the cumulative power usage was last reset. - 1.3.6.1.4.1.534.1.4.8
+    - name: xupsOutputAveragePowerFactor
+      oid: 1.3.6.1.4.1.534.1.4.9.5
+      type: gauge
+      help: Indicates the total power factor of the output in hundredths - 1.3.6.1.4.1.534.1.4.9.5
+    - name: xupsBypassFrequency
+      oid: 1.3.6.1.4.1.534.1.5.1
+      type: gauge
+      help: The bypass frequency in tenths of Hz. - 1.3.6.1.4.1.534.1.5.1
+    - name: xupsBypassVoltage
+      oid: 1.3.6.1.4.1.534.1.5.3.1.2
+      type: gauge
+      help: The measured UPS bypass voltage in volts. - 1.3.6.1.4.1.534.1.5.3.1.2
+      indexes:
+      - labelname: xupsBypassPhase
+        type: gauge
+      lookups:
+      - labels:
+        - xupsBypassPhase
+        labelname: xupsBypassName
+        oid: 1.3.6.1.4.1.534.1.5.3.1.4
+        type: DisplayString
+    - name: xupsBypassId
+      oid: 1.3.6.1.4.1.534.1.5.3.1.3
+      type: gauge
+      help: 'value indicates what measurement is being stored in this table row :
+        phase1 to neutral, phase2 to neutral, phase3 to neutral, phase1 to phase2,
+        phase2 to phase3, phase3 to phase1. - 1.3.6.1.4.1.534.1.5.3.1.3'
+      indexes:
+      - labelname: xupsBypassPhase
+        type: gauge
+      lookups:
+      - labels:
+        - xupsBypassPhase
+        labelname: xupsBypassName
+        oid: 1.3.6.1.4.1.534.1.5.3.1.4
+        type: DisplayString
+      enum_values:
+        1: phase1toN
+        2: phase2toN
+        3: phase3toN
+        4: phase1to2
+        5: phase2to3
+        6: phase3to1
+    - name: xupsBypassCurrentHighPrecision
+      oid: 1.3.6.1.4.1.534.1.5.3.1.5
+      type: gauge
+      help: The measured bypass current from the UPS meters in tenth of amps. - 1.3.6.1.4.1.534.1.5.3.1.5
+      indexes:
+      - labelname: xupsBypassPhase
+        type: gauge
+      lookups:
+      - labels:
+        - xupsBypassPhase
+        labelname: xupsBypassName
+        oid: 1.3.6.1.4.1.534.1.5.3.1.4
+        type: DisplayString
+    - name: xupsBypassWatts
+      oid: 1.3.6.1.4.1.534.1.5.3.1.6
+      type: gauge
+      help: The measured real bypass power in watts. - 1.3.6.1.4.1.534.1.5.3.1.6
+      indexes:
+      - labelname: xupsBypassPhase
+        type: gauge
+      lookups:
+      - labels:
+        - xupsBypassPhase
+        labelname: xupsBypassName
+        oid: 1.3.6.1.4.1.534.1.5.3.1.4
+        type: DisplayString
+    - name: xupsBypassVoltagePhaseToPhase
+      oid: 1.3.6.1.4.1.534.1.5.3.1.7
+      type: gauge
+      help: The measured bypass phase to phase voltage from the UPS meters in volts,
+        For the phase n, it is the measure of phase n to phase n+1 voltage. - 1.3.6.1.4.1.534.1.5.3.1.7
+      indexes:
+      - labelname: xupsBypassPhase
+        type: gauge
+      lookups:
+      - labels:
+        - xupsBypassPhase
+        labelname: xupsBypassName
+        oid: 1.3.6.1.4.1.534.1.5.3.1.4
+        type: DisplayString
+    - name: xupsBypassAveragePowerFactor
+      oid: 1.3.6.1.4.1.534.1.5.4.5
+      type: gauge
+      help: Indicates the total power factor of the input in hundredths - 1.3.6.1.4.1.534.1.5.4.5
+    - name: xupsEnvAmbientTemp
+      oid: 1.3.6.1.4.1.534.1.6.1
+      type: gauge
+      help: The reading of the ambient temperature in the vicinity of the UPS or SNMP
+        agent. - 1.3.6.1.4.1.534.1.6.1
+    - name: xupsEnvAmbientHumidity
+      oid: 1.3.6.1.4.1.534.1.6.4
+      type: gauge
+      help: The reading of the ambient humidity in the vicinity of the UPS or SNMP
+        agent. - 1.3.6.1.4.1.534.1.6.4
+    - name: upsBatteryVoltageValue
+      oid: 1.3.6.1.4.1.6574.4.3.2.1
+      type: Float
+      help: The magnitude of the present battery voltage. - 1.3.6.1.4.1.6574.4.3.2.1
+    - name: upsBatteryVoltageNominal
+      oid: 1.3.6.1.4.1.6574.4.3.2.2
+      type: Float
+      help: Nominal battery voltage. - 1.3.6.1.4.1.6574.4.3.2.2
+    - name: upsBatteryVoltageLow
+      oid: 1.3.6.1.4.1.6574.4.3.2.3
+      type: Float
+      help: Minimum battery voltage, that triggers FSD status . - 1.3.6.1.4.1.6574.4.3.2.3
+    - name: upsBatteryVoltageHigh
+      oid: 1.3.6.1.4.1.6574.4.3.2.4
+      type: Float
+      help: Maximum battery voltage (Ie battery.charge = 100). - 1.3.6.1.4.1.6574.4.3.2.4
+    - name: upsBatteryCurrent
+      oid: 1.3.6.1.4.1.6574.4.3.4
+      type: Float
+      help: The present battery current. - 1.3.6.1.4.1.6574.4.3.4
+    - name: upsBatteryTemperature
+      oid: 1.3.6.1.4.1.6574.4.3.5
+      type: Float
+      help: The ambient temperature at or near the UPS Battery casing. - 1.3.6.1.4.1.6574.4.3.5
   hrDevice:
     walk:
     - 1.3.6.1.2.1.25.3
@@ -20450,7 +21006,6 @@ modules:
       indexes:
       - labelname: mtxrWlRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlRtabIface
         type: gauge
     - name: mtxrWlRtabIface
@@ -20460,7 +21015,6 @@ modules:
       indexes:
       - labelname: mtxrWlRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlRtabIface
         type: gauge
     - name: mtxrWlRtabStrength
@@ -20470,7 +21024,6 @@ modules:
       indexes:
       - labelname: mtxrWlRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlRtabIface
         type: gauge
     - name: mtxrWlRtabTxBytes
@@ -20480,7 +21033,6 @@ modules:
       indexes:
       - labelname: mtxrWlRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlRtabIface
         type: gauge
     - name: mtxrWlRtabRxBytes
@@ -20490,7 +21042,6 @@ modules:
       indexes:
       - labelname: mtxrWlRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlRtabIface
         type: gauge
     - name: mtxrWlRtabTxPackets
@@ -20500,7 +21051,6 @@ modules:
       indexes:
       - labelname: mtxrWlRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlRtabIface
         type: gauge
     - name: mtxrWlRtabRxPackets
@@ -20510,7 +21060,6 @@ modules:
       indexes:
       - labelname: mtxrWlRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlRtabIface
         type: gauge
     - name: mtxrWlRtabTxRate
@@ -20520,7 +21069,6 @@ modules:
       indexes:
       - labelname: mtxrWlRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlRtabIface
         type: gauge
     - name: mtxrWlRtabRxRate
@@ -20530,7 +21078,6 @@ modules:
       indexes:
       - labelname: mtxrWlRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlRtabIface
         type: gauge
     - name: mtxrWlRtabRouterOSVersion
@@ -20540,7 +21087,6 @@ modules:
       indexes:
       - labelname: mtxrWlRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlRtabIface
         type: gauge
     - name: mtxrWlRtabUptime
@@ -20550,7 +21096,6 @@ modules:
       indexes:
       - labelname: mtxrWlRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlRtabIface
         type: gauge
     - name: mtxrWlRtabSignalToNoise
@@ -20560,7 +21105,6 @@ modules:
       indexes:
       - labelname: mtxrWlRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlRtabIface
         type: gauge
     - name: mtxrWlRtabTxStrengthCh0
@@ -20570,7 +21114,6 @@ modules:
       indexes:
       - labelname: mtxrWlRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlRtabIface
         type: gauge
     - name: mtxrWlRtabRxStrengthCh0
@@ -20580,7 +21123,6 @@ modules:
       indexes:
       - labelname: mtxrWlRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlRtabIface
         type: gauge
     - name: mtxrWlRtabTxStrengthCh1
@@ -20590,7 +21132,6 @@ modules:
       indexes:
       - labelname: mtxrWlRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlRtabIface
         type: gauge
     - name: mtxrWlRtabRxStrengthCh1
@@ -20600,7 +21141,6 @@ modules:
       indexes:
       - labelname: mtxrWlRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlRtabIface
         type: gauge
     - name: mtxrWlRtabTxStrengthCh2
@@ -20610,7 +21150,6 @@ modules:
       indexes:
       - labelname: mtxrWlRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlRtabIface
         type: gauge
     - name: mtxrWlRtabRxStrengthCh2
@@ -20620,7 +21159,6 @@ modules:
       indexes:
       - labelname: mtxrWlRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlRtabIface
         type: gauge
     - name: mtxrWlRtabTxStrength
@@ -20630,7 +21168,6 @@ modules:
       indexes:
       - labelname: mtxrWlRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlRtabIface
         type: gauge
     - name: mtxrWlRtabRadioName
@@ -20640,7 +21177,6 @@ modules:
       indexes:
       - labelname: mtxrWlRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlRtabIface
         type: gauge
     - name: mtxrWlApIndex
@@ -20731,7 +21267,6 @@ modules:
       indexes:
       - labelname: mtxrWlCMRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlCMRtabIface
         type: gauge
     - name: mtxrWlCMRtabIface
@@ -20741,7 +21276,6 @@ modules:
       indexes:
       - labelname: mtxrWlCMRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlCMRtabIface
         type: gauge
     - name: mtxrWlCMRtabUptime
@@ -20751,7 +21285,6 @@ modules:
       indexes:
       - labelname: mtxrWlCMRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlCMRtabIface
         type: gauge
     - name: mtxrWlCMRtabTxBytes
@@ -20761,7 +21294,6 @@ modules:
       indexes:
       - labelname: mtxrWlCMRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlCMRtabIface
         type: gauge
     - name: mtxrWlCMRtabRxBytes
@@ -20771,7 +21303,6 @@ modules:
       indexes:
       - labelname: mtxrWlCMRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlCMRtabIface
         type: gauge
     - name: mtxrWlCMRtabTxPackets
@@ -20781,7 +21312,6 @@ modules:
       indexes:
       - labelname: mtxrWlCMRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlCMRtabIface
         type: gauge
     - name: mtxrWlCMRtabRxPackets
@@ -20791,7 +21321,6 @@ modules:
       indexes:
       - labelname: mtxrWlCMRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlCMRtabIface
         type: gauge
     - name: mtxrWlCMRtabTxRate
@@ -20801,7 +21330,6 @@ modules:
       indexes:
       - labelname: mtxrWlCMRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlCMRtabIface
         type: gauge
     - name: mtxrWlCMRtabRxRate
@@ -20811,7 +21339,6 @@ modules:
       indexes:
       - labelname: mtxrWlCMRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlCMRtabIface
         type: gauge
     - name: mtxrWlCMRtabTxStrength
@@ -20821,7 +21348,6 @@ modules:
       indexes:
       - labelname: mtxrWlCMRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlCMRtabIface
         type: gauge
     - name: mtxrWlCMRtabRxStrength
@@ -20831,7 +21357,6 @@ modules:
       indexes:
       - labelname: mtxrWlCMRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlCMRtabIface
         type: gauge
     - name: mtxrWlCMRtabSsid
@@ -20841,7 +21366,6 @@ modules:
       indexes:
       - labelname: mtxrWlCMRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlCMRtabIface
         type: gauge
     - name: mtxrWlCMRtabEapIdent
@@ -20851,7 +21375,6 @@ modules:
       indexes:
       - labelname: mtxrWlCMRtabAddr
         type: PhysAddress48
-        fixed_size: 6
       - labelname: mtxrWlCMRtabIface
         type: gauge
     - name: mtxrWlCMRtabEntryCount
@@ -27170,307 +27693,6 @@ modules:
       oid: 1.3.6.1.4.1.4526.18.411
       type: DisplayString
       help: PSU status messages - 1.3.6.1.4.1.4526.18.411
-    - name: nasMgrSoftwareVersion
-      oid: 1.3.6.1.4.1.4526.22.1
-      type: DisplayString
-      help: Version information for the ReadyDATAOS ngNasManager software. - 1.3.6.1.4.1.4526.22.1
-    - name: diskNumber
-      oid: 1.3.6.1.4.1.4526.22.3.1.1
-      type: gauge
-      help: Instance number of the disk entry. - 1.3.6.1.4.1.4526.22.3.1.1
-      indexes:
-      - labelname: diskNumber
-        type: gauge
-    - name: diskID
-      oid: 1.3.6.1.4.1.4526.22.3.1.2
-      type: DisplayString
-      help: Disk ID. - 1.3.6.1.4.1.4526.22.3.1.2
-      indexes:
-      - labelname: diskNumber
-        type: gauge
-    - name: diskSlotName
-      oid: 1.3.6.1.4.1.4526.22.3.1.3
-      type: DisplayString
-      help: The slot location of the disk. - 1.3.6.1.4.1.4526.22.3.1.3
-      indexes:
-      - labelname: diskNumber
-        type: gauge
-    - name: diskSerial
-      oid: 1.3.6.1.4.1.4526.22.3.1.4
-      type: DisplayString
-      help: Disk Serial number. - 1.3.6.1.4.1.4526.22.3.1.4
-      indexes:
-      - labelname: diskNumber
-        type: gauge
-    - name: diskModel
-      oid: 1.3.6.1.4.1.4526.22.3.1.5
-      type: DisplayString
-      help: The disk drive's model name. - 1.3.6.1.4.1.4526.22.3.1.5
-      indexes:
-      - labelname: diskNumber
-        type: gauge
-    - name: ataError
-      oid: 1.3.6.1.4.1.4526.22.3.1.6
-      type: gauge
-      help: ATA error number for this disk from S.M.A.R.T read. - 1.3.6.1.4.1.4526.22.3.1.6
-      indexes:
-      - labelname: diskNumber
-        type: gauge
-    - name: diskCapacity
-      oid: 1.3.6.1.4.1.4526.22.3.1.7
-      type: DisplayString
-      help: The capacity of the disk in bytes. - 1.3.6.1.4.1.4526.22.3.1.7
-      indexes:
-      - labelname: diskNumber
-        type: gauge
-    - name: diskInterface
-      oid: 1.3.6.1.4.1.4526.22.3.1.8
-      type: DisplayString
-      help: The disk connect interface, such as SATA, USB etc. - 1.3.6.1.4.1.4526.22.3.1.8
-      indexes:
-      - labelname: diskNumber
-        type: gauge
-    - name: diskState
-      oid: 1.3.6.1.4.1.4526.22.3.1.9
-      type: DisplayString
-      help: The current state of the Disk - 1.3.6.1.4.1.4526.22.3.1.9
-      indexes:
-      - labelname: diskNumber
-        type: gauge
-    - name: diskTemperature
-      oid: 1.3.6.1.4.1.4526.22.3.1.10
-      type: gauge
-      help: temperature of this disk(in Fahrenheit unit). - 1.3.6.1.4.1.4526.22.3.1.10
-      indexes:
-      - labelname: diskNumber
-        type: gauge
-    - name: fanNumber
-      oid: 1.3.6.1.4.1.4526.22.4.1.1
-      type: gauge
-      help: Instance number of this fan entry. - 1.3.6.1.4.1.4526.22.4.1.1
-      indexes:
-      - labelname: fanNumber
-        type: gauge
-    - name: fanRPM
-      oid: 1.3.6.1.4.1.4526.22.4.1.2
-      type: gauge
-      help: The current speed of the fan. - 1.3.6.1.4.1.4526.22.4.1.2
-      indexes:
-      - labelname: fanNumber
-        type: gauge
-    - name: fanStatus
-      oid: 1.3.6.1.4.1.4526.22.4.1.3
-      type: DisplayString
-      help: The status of Fan - 1.3.6.1.4.1.4526.22.4.1.3
-      indexes:
-      - labelname: fanNumber
-        type: gauge
-    - name: fanType
-      oid: 1.3.6.1.4.1.4526.22.4.1.4
-      type: DisplayString
-      help: 'What fan is used for: SYS: for system board CPU: for CPU CASE: for system
-        case - 1.3.6.1.4.1.4526.22.4.1.4'
-      indexes:
-      - labelname: fanNumber
-        type: gauge
-    - name: temperatureNumber
-      oid: 1.3.6.1.4.1.4526.22.5.1.1
-      type: gauge
-      help: Instance number of this temperature probe entry. - 1.3.6.1.4.1.4526.22.5.1.1
-      indexes:
-      - labelname: temperatureNumber
-        type: gauge
-    - name: temperatureValue
-      oid: 1.3.6.1.4.1.4526.22.5.1.2
-      type: gauge
-      help: The current temperature of this probe (in Fahrenheit unit). - 1.3.6.1.4.1.4526.22.5.1.2
-      indexes:
-      - labelname: temperatureNumber
-        type: gauge
-    - name: temperatureTyoe
-      oid: 1.3.6.1.4.1.4526.22.5.1.3
-      type: DisplayString
-      help: The current temperature refer to - 1.3.6.1.4.1.4526.22.5.1.3
-      indexes:
-      - labelname: temperatureNumber
-        type: gauge
-    - name: temperatureMin
-      oid: 1.3.6.1.4.1.4526.22.5.1.4
-      type: gauge
-      help: The min temperature of this probe (in Fahrenheit unit). - 1.3.6.1.4.1.4526.22.5.1.4
-      indexes:
-      - labelname: temperatureNumber
-        type: gauge
-    - name: temperatureMax
-      oid: 1.3.6.1.4.1.4526.22.5.1.5
-      type: gauge
-      help: The max temperature of this probe (in Fahrenheit unit). - 1.3.6.1.4.1.4526.22.5.1.5
-      indexes:
-      - labelname: temperatureNumber
-        type: gauge
-    - name: volumeNumber
-      oid: 1.3.6.1.4.1.4526.22.7.1.1
-      type: gauge
-      help: Instance number of the volume entry. - 1.3.6.1.4.1.4526.22.7.1.1
-      indexes:
-      - labelname: volumeNumber
-        type: gauge
-    - name: volumeName
-      oid: 1.3.6.1.4.1.4526.22.7.1.2
-      type: DisplayString
-      help: The name of the volume. - 1.3.6.1.4.1.4526.22.7.1.2
-      indexes:
-      - labelname: volumeNumber
-        type: gauge
-    - name: volumeRAIDLevel
-      oid: 1.3.6.1.4.1.4526.22.7.1.3
-      type: DisplayString
-      help: The RAID level of the volume. - 1.3.6.1.4.1.4526.22.7.1.3
-      indexes:
-      - labelname: volumeNumber
-        type: gauge
-    - name: volumeStatus
-      oid: 1.3.6.1.4.1.4526.22.7.1.4
-      type: DisplayString
-      help: The severity of the volume - 1.3.6.1.4.1.4526.22.7.1.4
-      indexes:
-      - labelname: volumeNumber
-        type: gauge
-    - name: volumeSize
-      oid: 1.3.6.1.4.1.4526.22.7.1.5
-      type: gauge
-      help: The size of the volume in megabytes. - 1.3.6.1.4.1.4526.22.7.1.5
-      indexes:
-      - labelname: volumeNumber
-        type: gauge
-    - name: volumeFreeSpace
-      oid: 1.3.6.1.4.1.4526.22.7.1.6
-      type: gauge
-      help: Free space on the volume in megabytes. - 1.3.6.1.4.1.4526.22.7.1.6
-      indexes:
-      - labelname: volumeNumber
-        type: gauge
-    - name: psuNumber
-      oid: 1.3.6.1.4.1.4526.22.8.1.1
-      type: gauge
-      help: Instance number of this power supply unit. - 1.3.6.1.4.1.4526.22.8.1.1
-      indexes:
-      - labelname: psuNumber
-        type: gauge
-    - name: psuDesc
-      oid: 1.3.6.1.4.1.4526.22.8.1.2
-      type: DisplayString
-      help: The description of this PSU. - 1.3.6.1.4.1.4526.22.8.1.2
-      indexes:
-      - labelname: psuNumber
-        type: gauge
-    - name: psuStatus
-      oid: 1.3.6.1.4.1.4526.22.8.1.3
-      type: DisplayString
-      help: The current PSU status. - 1.3.6.1.4.1.4526.22.8.1.3
-      indexes:
-      - labelname: psuNumber
-        type: gauge
-    - name: controllerNameEv
-      oid: 1.3.6.1.4.1.4526.22.200.201
-      type: DisplayString
-      help: Controller Name for which trap is generated. - 1.3.6.1.4.1.4526.22.200.201
-    - name: channelNumberEv
-      oid: 1.3.6.1.4.1.4526.22.200.202
-      type: gauge
-      help: Channel Number for which trap is generated. - 1.3.6.1.4.1.4526.22.200.202
-    - name: targetIDEv
-      oid: 1.3.6.1.4.1.4526.22.200.203
-      type: gauge
-      help: SCSI ID of the device for which trap is generated. - 1.3.6.1.4.1.4526.22.200.203
-    - name: virtualDiskNameEv
-      oid: 1.3.6.1.4.1.4526.22.200.204
-      type: DisplayString
-      help: Virtual Disk for which trap is generated. - 1.3.6.1.4.1.4526.22.200.204
-    - name: arrayDiskNameEv
-      oid: 1.3.6.1.4.1.4526.22.200.205
-      type: DisplayString
-      help: Array Disk for which trap is generated. - 1.3.6.1.4.1.4526.22.200.205
-    - name: oldVDConfigEv
-      oid: 1.3.6.1.4.1.4526.22.200.206
-      type: DisplayString
-      help: Current Virtual Disk configuration for which trap is generated - 1.3.6.1.4.1.4526.22.200.206
-    - name: newVDConfigEv
-      oid: 1.3.6.1.4.1.4526.22.200.207
-      type: DisplayString
-      help: New Virtual Disk configuration for which trap is generated. - 1.3.6.1.4.1.4526.22.200.207
-    - name: enclosureNumberEv
-      oid: 1.3.6.1.4.1.4526.22.200.208
-      type: gauge
-      help: Enclosure Number for which trap is generated. - 1.3.6.1.4.1.4526.22.200.208
-    - name: unitNumberEv
-      oid: 1.3.6.1.4.1.4526.22.200.209
-      type: gauge
-      help: Unit Number for which trap is generated - 1.3.6.1.4.1.4526.22.200.209
-    - name: enclosureNameEv
-      oid: 1.3.6.1.4.1.4526.22.200.210
-      type: DisplayString
-      help: Enclosure Name for which trap is generated. - 1.3.6.1.4.1.4526.22.200.210
-    - name: unitNameEv
-      oid: 1.3.6.1.4.1.4526.22.200.211
-      type: DisplayString
-      help: Unit Number for which trap is generated - 1.3.6.1.4.1.4526.22.200.211
-    - name: timeEv
-      oid: 1.3.6.1.4.1.4526.22.200.212
-      type: gauge
-      help: Amount of time specified in the trap message. - 1.3.6.1.4.1.4526.22.200.212
-    - name: volumeNameEv
-      oid: 1.3.6.1.4.1.4526.22.200.213
-      type: DisplayString
-      help: Volume Drive Letter for which trap is generated. - 1.3.6.1.4.1.4526.22.200.213
-    - name: fanFailureMesg
-      oid: 1.3.6.1.4.1.4526.22.400
-      type: DisplayString
-      help: Failure message for Fan - 1.3.6.1.4.1.4526.22.400
-    - name: tempFailureMesg
-      oid: 1.3.6.1.4.1.4526.22.401
-      type: DisplayString
-      help: Failure message for system temperature - 1.3.6.1.4.1.4526.22.401
-    - name: powerVoltageMesg
-      oid: 1.3.6.1.4.1.4526.22.402
-      type: DisplayString
-      help: Failure message for system power - 1.3.6.1.4.1.4526.22.402
-    - name: raidEventNoticeMesg
-      oid: 1.3.6.1.4.1.4526.22.403
-      type: DisplayString
-      help: RAID hotplug event message - 1.3.6.1.4.1.4526.22.403
-    - name: snapshotEventNoticeMesg
-      oid: 1.3.6.1.4.1.4526.22.404
-      type: DisplayString
-      help: Snapshot messages - 1.3.6.1.4.1.4526.22.404
-    - name: upsEventNoticeMesg
-      oid: 1.3.6.1.4.1.4526.22.405
-      type: DisplayString
-      help: UPS status message - 1.3.6.1.4.1.4526.22.405
-    - name: hotplugDiskNoticeMesg
-      oid: 1.3.6.1.4.1.4526.22.406
-      type: DisplayString
-      help: Disk hotplug event messages - 1.3.6.1.4.1.4526.22.406
-    - name: volumeNoticeMesg
-      oid: 1.3.6.1.4.1.4526.22.407
-      type: DisplayString
-      help: Disk usage warning - 1.3.6.1.4.1.4526.22.407
-    - name: diskTempWarningMesg
-      oid: 1.3.6.1.4.1.4526.22.408
-      type: DisplayString
-      help: Disk temperature warning messages - 1.3.6.1.4.1.4526.22.408
-    - name: backupNoticeMesg
-      oid: 1.3.6.1.4.1.4526.22.409
-      type: DisplayString
-      help: Backup job status messages - 1.3.6.1.4.1.4526.22.409
-    - name: diskSmartWarningMesg
-      oid: 1.3.6.1.4.1.4526.22.410
-      type: DisplayString
-      help: Disk SMART messages - 1.3.6.1.4.1.4526.22.410
-    - name: psuWarningMesg
-      oid: 1.3.6.1.4.1.4526.22.411
-      type: DisplayString
-      help: PSU status messages - 1.3.6.1.4.1.4526.22.411
   servertech_sentry3:
     walk:
     - 1.3.6.1.4.1.1718.3.2.2
@@ -30335,6 +30557,364 @@ modules:
         21: nvmFail
         22: profileError
         23: conflict
+  supermicro:
+    walk:
+    - 1.3.6.1.4.1.21317.1.14.2
+    - 1.3.6.1.4.1.21317.1.3
+    get:
+    - 1.3.6.1.4.1.21317.1.14.1.0
+    - 1.3.6.1.4.1.21317.1.4.0
+    metrics:
+    - name: psuNumber
+      oid: 1.3.6.1.4.1.21317.1.14.1
+      type: gauge
+      help: Number of PSUs - 1.3.6.1.4.1.21317.1.14.1
+    - name: psuIndex
+      oid: 1.3.6.1.4.1.21317.1.14.2.1.1
+      type: gauge
+      help: A unique value, start from one, for each PSU - 1.3.6.1.4.1.21317.1.14.2.1.1
+      indexes:
+      - labelname: psuIndex
+        type: gauge
+      lookups:
+      - labels:
+        - psuIndex
+        labelname: psuSerialNumber
+        oid: 1.3.6.1.4.1.21317.1.14.2.1.13
+        type: DisplayString
+    - name: psuStatus
+      oid: 1.3.6.1.4.1.21317.1.14.2.1.2
+      type: EnumAsStateSet
+      help: PSU Status. - 1.3.6.1.4.1.21317.1.14.2.1.2
+      indexes:
+      - labelname: psuIndex
+        type: gauge
+      lookups:
+      - labels:
+        - psuIndex
+        labelname: psuSerialNumber
+        oid: 1.3.6.1.4.1.21317.1.14.2.1.13
+        type: DisplayString
+      enum_values:
+        0: fail
+        1: good
+    - name: inputVoltage
+      oid: 1.3.6.1.4.1.21317.1.14.2.1.3
+      type: DisplayString
+      help: PSU Input Voltage. - 1.3.6.1.4.1.21317.1.14.2.1.3
+      indexes:
+      - labelname: psuIndex
+        type: gauge
+      lookups:
+      - labels:
+        - psuIndex
+        labelname: psuSerialNumber
+        oid: 1.3.6.1.4.1.21317.1.14.2.1.13
+        type: DisplayString
+      regex_extracts:
+        "":
+        - value: $1
+          regex: ^(?:(.*))$
+    - name: inputCurrent
+      oid: 1.3.6.1.4.1.21317.1.14.2.1.4
+      type: DisplayString
+      help: PSU Input Current. - 1.3.6.1.4.1.21317.1.14.2.1.4
+      indexes:
+      - labelname: psuIndex
+        type: gauge
+      lookups:
+      - labels:
+        - psuIndex
+        labelname: psuSerialNumber
+        oid: 1.3.6.1.4.1.21317.1.14.2.1.13
+        type: DisplayString
+      regex_extracts:
+        "":
+        - value: $1
+          regex: ^(?:(.*))$
+    - name: inputPower
+      oid: 1.3.6.1.4.1.21317.1.14.2.1.5
+      type: gauge
+      help: PSU Input Power. - 1.3.6.1.4.1.21317.1.14.2.1.5
+      indexes:
+      - labelname: psuIndex
+        type: gauge
+      lookups:
+      - labels:
+        - psuIndex
+        labelname: psuSerialNumber
+        oid: 1.3.6.1.4.1.21317.1.14.2.1.13
+        type: DisplayString
+    - name: outputVoltage
+      oid: 1.3.6.1.4.1.21317.1.14.2.1.6
+      type: DisplayString
+      help: PSU Output Voltage. - 1.3.6.1.4.1.21317.1.14.2.1.6
+      indexes:
+      - labelname: psuIndex
+        type: gauge
+      lookups:
+      - labels:
+        - psuIndex
+        labelname: psuSerialNumber
+        oid: 1.3.6.1.4.1.21317.1.14.2.1.13
+        type: DisplayString
+      regex_extracts:
+        "":
+        - value: $1
+          regex: ^(?:(.*))$
+    - name: outputCurrent
+      oid: 1.3.6.1.4.1.21317.1.14.2.1.7
+      type: DisplayString
+      help: PSU Output Current. - 1.3.6.1.4.1.21317.1.14.2.1.7
+      indexes:
+      - labelname: psuIndex
+        type: gauge
+      lookups:
+      - labels:
+        - psuIndex
+        labelname: psuSerialNumber
+        oid: 1.3.6.1.4.1.21317.1.14.2.1.13
+        type: DisplayString
+      regex_extracts:
+        "":
+        - value: $1
+          regex: ^(?:(.*))$
+    - name: outputPower
+      oid: 1.3.6.1.4.1.21317.1.14.2.1.8
+      type: gauge
+      help: PSU Output Power. - 1.3.6.1.4.1.21317.1.14.2.1.8
+      indexes:
+      - labelname: psuIndex
+        type: gauge
+      lookups:
+      - labels:
+        - psuIndex
+        labelname: psuSerialNumber
+        oid: 1.3.6.1.4.1.21317.1.14.2.1.13
+        type: DisplayString
+    - name: temperature1
+      oid: 1.3.6.1.4.1.21317.1.14.2.1.9
+      type: gauge
+      help: PSU Temperature1. - 1.3.6.1.4.1.21317.1.14.2.1.9
+      indexes:
+      - labelname: psuIndex
+        type: gauge
+      lookups:
+      - labels:
+        - psuIndex
+        labelname: psuSerialNumber
+        oid: 1.3.6.1.4.1.21317.1.14.2.1.13
+        type: DisplayString
+    - name: temperature2
+      oid: 1.3.6.1.4.1.21317.1.14.2.1.10
+      type: gauge
+      help: PSU Temperature2. - 1.3.6.1.4.1.21317.1.14.2.1.10
+      indexes:
+      - labelname: psuIndex
+        type: gauge
+      lookups:
+      - labels:
+        - psuIndex
+        labelname: psuSerialNumber
+        oid: 1.3.6.1.4.1.21317.1.14.2.1.13
+        type: DisplayString
+    - name: fanRPM1
+      oid: 1.3.6.1.4.1.21317.1.14.2.1.11
+      type: gauge
+      help: PSU Fan RPM1. - 1.3.6.1.4.1.21317.1.14.2.1.11
+      indexes:
+      - labelname: psuIndex
+        type: gauge
+      lookups:
+      - labels:
+        - psuIndex
+        labelname: psuSerialNumber
+        oid: 1.3.6.1.4.1.21317.1.14.2.1.13
+        type: DisplayString
+    - name: fanRPM2
+      oid: 1.3.6.1.4.1.21317.1.14.2.1.12
+      type: gauge
+      help: PSU Fan RPM2. - 1.3.6.1.4.1.21317.1.14.2.1.12
+      indexes:
+      - labelname: psuIndex
+        type: gauge
+      lookups:
+      - labels:
+        - psuIndex
+        labelname: psuSerialNumber
+        oid: 1.3.6.1.4.1.21317.1.14.2.1.13
+        type: DisplayString
+    - name: sensorReading
+      oid: 1.3.6.1.4.1.21317.1.3.1.2
+      type: DisplayString
+      help: Current sensor reading
+      indexes:
+      - labelname: sensorNumber
+        type: gauge
+      lookups:
+      - labels:
+        - sensorNumber
+        labelname: sensorIDString
+        oid: 1.3.6.1.4.1.21317.1.3.1.13
+        type: DisplayString
+      - labels: []
+        labelname: sensorNumber
+      regex_extracts:
+        "":
+        - value: $1
+          regex: ^(?:(.*))$
+    - name: sensorPositiveHysteresis
+      oid: 1.3.6.1.4.1.21317.1.3.1.3
+      type: gauge
+      help: Sensor positive hysteresis
+      indexes:
+      - labelname: sensorNumber
+        type: gauge
+      lookups:
+      - labels:
+        - sensorNumber
+        labelname: sensorIDString
+        oid: 1.3.6.1.4.1.21317.1.3.1.13
+        type: DisplayString
+      - labels: []
+        labelname: sensorNumber
+    - name: sensorNegativeHysteresis
+      oid: 1.3.6.1.4.1.21317.1.3.1.4
+      type: gauge
+      help: Sensor negative hysteresis
+      indexes:
+      - labelname: sensorNumber
+        type: gauge
+      lookups:
+      - labels:
+        - sensorNumber
+        labelname: sensorIDString
+        oid: 1.3.6.1.4.1.21317.1.3.1.13
+        type: DisplayString
+      - labels: []
+        labelname: sensorNumber
+    - name: lncThreshold
+      oid: 1.3.6.1.4.1.21317.1.3.1.5
+      type: DisplayString
+      help: Lower non-critical threshold
+      indexes:
+      - labelname: sensorNumber
+        type: gauge
+      lookups:
+      - labels:
+        - sensorNumber
+        labelname: sensorIDString
+        oid: 1.3.6.1.4.1.21317.1.3.1.13
+        type: DisplayString
+      - labels: []
+        labelname: sensorNumber
+      regex_extracts:
+        "":
+        - value: $1
+          regex: ^(?:(.*))$
+    - name: lcThreshold
+      oid: 1.3.6.1.4.1.21317.1.3.1.6
+      type: DisplayString
+      help: Lower critical threshold
+      indexes:
+      - labelname: sensorNumber
+        type: gauge
+      lookups:
+      - labels:
+        - sensorNumber
+        labelname: sensorIDString
+        oid: 1.3.6.1.4.1.21317.1.3.1.13
+        type: DisplayString
+      - labels: []
+        labelname: sensorNumber
+      regex_extracts:
+        "":
+        - value: $1
+          regex: ^(?:(.*))$
+    - name: lnrThreshold
+      oid: 1.3.6.1.4.1.21317.1.3.1.7
+      type: DisplayString
+      help: Lower non-recoverable threshold
+      indexes:
+      - labelname: sensorNumber
+        type: gauge
+      lookups:
+      - labels:
+        - sensorNumber
+        labelname: sensorIDString
+        oid: 1.3.6.1.4.1.21317.1.3.1.13
+        type: DisplayString
+      - labels: []
+        labelname: sensorNumber
+      regex_extracts:
+        "":
+        - value: $1
+          regex: ^(?:(.*))$
+    - name: uncThreshold
+      oid: 1.3.6.1.4.1.21317.1.3.1.8
+      type: DisplayString
+      help: Upper non-critical threshold
+      indexes:
+      - labelname: sensorNumber
+        type: gauge
+      lookups:
+      - labels:
+        - sensorNumber
+        labelname: sensorIDString
+        oid: 1.3.6.1.4.1.21317.1.3.1.13
+        type: DisplayString
+      - labels: []
+        labelname: sensorNumber
+      regex_extracts:
+        "":
+        - value: $1
+          regex: ^(?:(.*))$
+    - name: ucThreshold
+      oid: 1.3.6.1.4.1.21317.1.3.1.9
+      type: DisplayString
+      help: Upper critical threshold
+      indexes:
+      - labelname: sensorNumber
+        type: gauge
+      lookups:
+      - labels:
+        - sensorNumber
+        labelname: sensorIDString
+        oid: 1.3.6.1.4.1.21317.1.3.1.13
+        type: DisplayString
+      - labels: []
+        labelname: sensorNumber
+      regex_extracts:
+        "":
+        - value: $1
+          regex: ^(?:(.*))$
+    - name: unrThreshold
+      oid: 1.3.6.1.4.1.21317.1.3.1.10
+      type: DisplayString
+      help: Upper non-recoverable threshold
+      indexes:
+      - labelname: sensorNumber
+        type: gauge
+      lookups:
+      - labels:
+        - sensorNumber
+        labelname: sensorIDString
+        oid: 1.3.6.1.4.1.21317.1.3.1.13
+        type: DisplayString
+      - labels: []
+        labelname: sensorNumber
+      regex_extracts:
+        "":
+        - value: $1
+          regex: ^(?:(.*))$
+    - name: powerStatus
+      oid: 1.3.6.1.4.1.21317.1.4
+      type: EnumAsStateSet
+      help: Power status
+      enum_values:
+        0: poweroff
+        1: poweron
+        2: powerreset
   synology:
     walk:
     - 1.3.6.1.4.1.2021.10.1.2
@@ -30557,7 +31137,7 @@ modules:
         - 1.3.6.1.4.1.6574.1.4.2
     - name: modelName
       oid: 1.3.6.1.4.1.6574.1.5.1
-      type: DisplayString
+      type: OctetString
       help: The Model name of this NAS - 1.3.6.1.4.1.6574.1.5.1
     - name: serialNumber
       oid: 1.3.6.1.4.1.6574.1.5.2
@@ -33556,7 +34136,6 @@ modules:
         type: gauge
       - labelname: ubntStaMac
         type: PhysAddress48
-        fixed_size: 6
     - name: ubntStaName
       oid: 1.3.6.1.4.1.41112.1.4.7.1.2
       type: DisplayString
@@ -33566,7 +34145,6 @@ modules:
         type: gauge
       - labelname: ubntStaMac
         type: PhysAddress48
-        fixed_size: 6
     - name: ubntStaSignal
       oid: 1.3.6.1.4.1.41112.1.4.7.1.3
       type: gauge
@@ -33576,7 +34154,6 @@ modules:
         type: gauge
       - labelname: ubntStaMac
         type: PhysAddress48
-        fixed_size: 6
     - name: ubntStaNoiseFloor
       oid: 1.3.6.1.4.1.41112.1.4.7.1.4
       type: gauge
@@ -33586,7 +34163,6 @@ modules:
         type: gauge
       - labelname: ubntStaMac
         type: PhysAddress48
-        fixed_size: 6
     - name: ubntStaDistance
       oid: 1.3.6.1.4.1.41112.1.4.7.1.5
       type: gauge
@@ -33596,7 +34172,6 @@ modules:
         type: gauge
       - labelname: ubntStaMac
         type: PhysAddress48
-        fixed_size: 6
     - name: ubntStaCcq
       oid: 1.3.6.1.4.1.41112.1.4.7.1.6
       type: gauge
@@ -33606,7 +34181,6 @@ modules:
         type: gauge
       - labelname: ubntStaMac
         type: PhysAddress48
-        fixed_size: 6
     - name: ubntStaAmp
       oid: 1.3.6.1.4.1.41112.1.4.7.1.7
       type: gauge
@@ -33616,7 +34190,6 @@ modules:
         type: gauge
       - labelname: ubntStaMac
         type: PhysAddress48
-        fixed_size: 6
     - name: ubntStaAmq
       oid: 1.3.6.1.4.1.41112.1.4.7.1.8
       type: gauge
@@ -33626,7 +34199,6 @@ modules:
         type: gauge
       - labelname: ubntStaMac
         type: PhysAddress48
-        fixed_size: 6
     - name: ubntStaAmc
       oid: 1.3.6.1.4.1.41112.1.4.7.1.9
       type: gauge
@@ -33636,7 +34208,6 @@ modules:
         type: gauge
       - labelname: ubntStaMac
         type: PhysAddress48
-        fixed_size: 6
     - name: ubntStaLastIp
       oid: 1.3.6.1.4.1.41112.1.4.7.1.10
       type: InetAddressIPv4
@@ -33646,7 +34217,6 @@ modules:
         type: gauge
       - labelname: ubntStaMac
         type: PhysAddress48
-        fixed_size: 6
     - name: ubntStaTxRate
       oid: 1.3.6.1.4.1.41112.1.4.7.1.11
       type: gauge
@@ -33656,7 +34226,6 @@ modules:
         type: gauge
       - labelname: ubntStaMac
         type: PhysAddress48
-        fixed_size: 6
     - name: ubntStaRxRate
       oid: 1.3.6.1.4.1.41112.1.4.7.1.12
       type: gauge
@@ -33666,7 +34235,6 @@ modules:
         type: gauge
       - labelname: ubntStaMac
         type: PhysAddress48
-        fixed_size: 6
     - name: ubntStaTxBytes
       oid: 1.3.6.1.4.1.41112.1.4.7.1.13
       type: counter
@@ -33676,7 +34244,6 @@ modules:
         type: gauge
       - labelname: ubntStaMac
         type: PhysAddress48
-        fixed_size: 6
     - name: ubntStaRxBytes
       oid: 1.3.6.1.4.1.41112.1.4.7.1.14
       type: counter
@@ -33686,7 +34253,6 @@ modules:
         type: gauge
       - labelname: ubntStaMac
         type: PhysAddress48
-        fixed_size: 6
     - name: ubntStaConnTime
       oid: 1.3.6.1.4.1.41112.1.4.7.1.15
       type: gauge
@@ -33696,7 +34262,6 @@ modules:
         type: gauge
       - labelname: ubntStaMac
         type: PhysAddress48
-        fixed_size: 6
     - name: ubntStaLocalCINR
       oid: 1.3.6.1.4.1.41112.1.4.7.1.16
       type: gauge
@@ -33706,7 +34271,6 @@ modules:
         type: gauge
       - labelname: ubntStaMac
         type: PhysAddress48
-        fixed_size: 6
     - name: ubntStaTxCapacity
       oid: 1.3.6.1.4.1.41112.1.4.7.1.17
       type: gauge
@@ -33716,7 +34280,6 @@ modules:
         type: gauge
       - labelname: ubntStaMac
         type: PhysAddress48
-        fixed_size: 6
     - name: ubntStaRxCapacity
       oid: 1.3.6.1.4.1.41112.1.4.7.1.18
       type: gauge
@@ -33726,7 +34289,6 @@ modules:
         type: gauge
       - labelname: ubntStaMac
         type: PhysAddress48
-        fixed_size: 6
     - name: ubntStaTxAirtime
       oid: 1.3.6.1.4.1.41112.1.4.7.1.19
       type: gauge
@@ -33736,7 +34298,6 @@ modules:
         type: gauge
       - labelname: ubntStaMac
         type: PhysAddress48
-        fixed_size: 6
     - name: ubntStaRxAirtime
       oid: 1.3.6.1.4.1.41112.1.4.7.1.20
       type: gauge
@@ -33746,7 +34307,6 @@ modules:
         type: gauge
       - labelname: ubntStaMac
         type: PhysAddress48
-        fixed_size: 6
     - name: ubntStaTxLatency
       oid: 1.3.6.1.4.1.41112.1.4.7.1.21
       type: gauge
@@ -33756,7 +34316,6 @@ modules:
         type: gauge
       - labelname: ubntStaMac
         type: PhysAddress48
-        fixed_size: 6
     - name: ubntHostLocaltime
       oid: 1.3.6.1.4.1.41112.1.4.8.1
       type: DisplayString

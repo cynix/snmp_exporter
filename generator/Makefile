@@ -66,6 +66,9 @@ CYBERPOWER_URL     := https://dl4jz3rbrsfum.cloudfront.net/software/CyberPower_M
 EAP_VERSION := 1.0
 EAP_URL     := http://static.tp-link.com/EAP_Private_Mibs_$(EAP_VERSION).zip
 
+EATON_URL         := https://www.eaton.com/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/Firmware/connectivity/eaton-network-connectivity-mib-files.zip
+SUPERMICRO_URL    := https://www.supermicro.com/products/accessories/software/X12_X13_MIBs_2024_0329.zip
+
 .DEFAULT: all
 
 .PHONY: all
@@ -80,6 +83,8 @@ clean:
 		$(MIBDIR)/.paloalto_panos \
 		$(MIBDIR)/.synology \
 		$(MIBDIR)/.kemp-lm \
+		$(MIBDIR)/.eaton \
+		$(MIBDIR)/.supermicro \
 		$(MIBDIR)/readynas \
 		$(MIBDIR)/readydataos
 
@@ -139,6 +144,8 @@ mibs: \
   $(MIBDIR)/PRINTER-MIB-V2.txt \
   $(MIBDIR)/servertech-sentry3-mib \
   $(MIBDIR)/servertech-sentry4-mib \
+  $(MIBDIR)/.eaton \
+  $(MIBDIR)/.supermicro \
   $(MIBDIR)/.synology \
   $(MIBDIR)/UBNT-UniFi-MIB \
   $(MIBDIR)/UBNT-AirFiber-MIB \
@@ -292,6 +299,39 @@ $(MIBDIR)/servertech-sentry3-mib:
 $(MIBDIR)/servertech-sentry4-mib:
 	@echo ">> Downloading servertech-sentry4-mib"
 	@curl $(CURL_OPTS) -o $(MIBDIR)/servertech-sentry4-mib $(SERVERTECH4_URL)
+
+$(MIBDIR)/.eaton:
+	$(eval TMP := $(shell mktemp))
+	@echo ">> Downloading EATON MIBs to $(TMP)"
+	@curl $(CURL_OPTS) \
+		--header 'accept: text/html,*/*;q=0.8' \
+		--header 'accept-language: en' \
+		--header 'cache-control: no-cache' \
+		--header 'pragma: no-cache' \
+		--header 'priority: u=0, i' \
+		--header 'referer: https://www.eaton.com/au/en-gb/products/backup-power-ups-surge-it-power-distribution/firmware-downloads.html' \
+		--header 'sec-ch-ua: "Chromium";v="131", "Not_A Brand";v="24"' \
+		--header 'sec-ch-ua-mobile: ?0' \
+		--header 'sec-ch-ua-platform: "macOS"' \
+		--header 'sec-fetch-dest: document' \
+		--header 'sec-fetch-mode: navigate' \
+		--header 'sec-fetch-site: same-origin' \
+		--header 'sec-fetch-user: ?1' \
+		--header 'sec-gpc: 1' \
+		--header 'upgrade-inscure-requests: 1' \
+		--header 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36' \
+		-o $(TMP) $(EATON_URL)
+	@unzip -j -d $(MIBDIR) $(TMP)
+	@rm -v $(TMP)
+	@touch $(MIBDIR)/.eaton
+
+$(MIBDIR)/.supermicro:
+	$(eval TMP := $(shell mktemp))
+	@echo ">> Downloading IPMI-SNMP-Agent.mib to $(TMP)"
+	@curl $(CURL_OPTS) -o $(TMP) $(SUPERMICRO_URL)
+	@unzip -j -d $(MIBDIR) $(TMP) IPMI-SNMP-Agent.mib
+	@rm -v $(TMP)
+	@touch $(MIBDIR)/.supermicro
 
 $(MIBDIR)/.synology:
 	$(eval TMP := $(shell mktemp))
