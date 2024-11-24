@@ -31,6 +31,9 @@ ifeq ($(SELINUX_ENABLED),1)
   DOCKER_VOL_OPTS ?= :z
 endif
 
+EATON_URL         := https://www.eaton.com/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/Firmware/connectivity/eaton-network-connectivity-mib-files.zip
+SUPERMICRO_URL    := https://www.supermicro.com/products/accessories/software/X12_X13_MIBs_2024_0329.zip
+
 APC_URL           := https://download.schneider-electric.com/files?p_File_Name=powernet452.mib&p_Doc_Ref=APC_POWERNETMIB_452_EN&p_enDocType=Firmware
 ARISTA_URL        := https://www.arista.com/assets/data/docs/MIBS
 CISCO_URL         := https://raw.githubusercontent.com/cisco/cisco-mibs/f55dc443daff58dfc86a764047ded2248bb94e12/v2
@@ -87,6 +90,8 @@ all: mibs
 clean:
 	rm -rvf \
 		$(MIBDIR)/* \
+		$(MIBDIR)/.eaton \
+		$(MIBDIR)/.supermicro \
 		$(MIBDIR)/.cisco-device \
 		$(MIBDIR)/.cisco_v2 \
 		$(MIBDIR)/.cisco_imc \
@@ -131,6 +136,8 @@ docker-tag-latest:
 	docker tag "$(DOCKER_REPO)/$(DOCKER_IMAGE_NAME):$(SANITIZED_DOCKER_IMAGE_TAG)" "$(DOCKER_REPO)/$(DOCKER_IMAGE_NAME):latest"
 
 mibs: \
+  $(MIBDIR)/.eaton \
+  $(MIBDIR)/.supermicro \
   $(MIBDIR)/apc-powernet-mib \
   $(MIBDIR)/readynas \
   $(MIBDIR)/readydataos \
@@ -178,6 +185,18 @@ mibs: \
   $(MIBDIR)/.eltex-mes \
   $(MIBDIR)/.juniper \
   $(MIBDIR)/.dell-network
+
+$(MIBDIR)/.eaton:
+	@cp eaton-network-connectivity-mib-files/* $(MIBDIR)
+	@touch $(MIBDIR)/.eaton
+
+$(MIBDIR)/.supermicro:
+	$(eval TMP := $(shell mktemp))
+	@echo ">> Downloading IPMI-SNMP-Agent.mib to $(TMP)"
+	@curl $(CURL_OPTS) -o $(TMP) $(SUPERMICRO_URL)
+	@unzip -j -d $(MIBDIR) $(TMP) IPMI-SNMP-Agent.mib
+	@rm -v $(TMP)
+	@touch $(MIBDIR)/.supermicro
 
 $(MIBDIR)/apc-powernet-mib:
 	@echo ">> Downloading apc-powernet-mib" 
